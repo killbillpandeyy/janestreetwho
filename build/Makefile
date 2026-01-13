@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sandeep.bollepalli/Trader
+CMAKE_SOURCE_DIR = /Users/krishna/Desktop/janestreetwho
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sandeep.bollepalli/Trader/build
+CMAKE_BINARY_DIR = /Users/krishna/Desktop/janestreetwho/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sandeep.bollepalli/Trader/build/CMakeFiles /Users/sandeep.bollepalli/Trader/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/krishna/Desktop/janestreetwho/build/CMakeFiles /Users/krishna/Desktop/janestreetwho/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sandeep.bollepalli/Trader/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/krishna/Desktop/janestreetwho/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ CrowBackend/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/build
 .PHONY : CrowBackend/fast
 
+auth.o: auth.cpp.o
+.PHONY : auth.o
+
+# target to build an object file
+auth.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/auth.cpp.o
+.PHONY : auth.cpp.o
+
+auth.i: auth.cpp.i
+.PHONY : auth.i
+
+# target to preprocess a source file
+auth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/auth.cpp.i
+.PHONY : auth.cpp.i
+
+auth.s: auth.cpp.s
+.PHONY : auth.s
+
+# target to generate assembly for a file
+auth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/auth.cpp.s
+.PHONY : auth.cpp.s
+
+database.o: database.cpp.o
+.PHONY : database.o
+
+# target to build an object file
+database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/database.cpp.o
+.PHONY : database.cpp.o
+
+database.i: database.cpp.i
+.PHONY : database.i
+
+# target to preprocess a source file
+database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/database.cpp.i
+.PHONY : database.cpp.i
+
+database.s: database.cpp.s
+.PHONY : database.s
+
+# target to generate assembly for a file
+database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CrowBackend.dir/build.make CMakeFiles/CrowBackend.dir/database.cpp.s
+.PHONY : database.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CrowBackend"
+	@echo "... auth.o"
+	@echo "... auth.i"
+	@echo "... auth.s"
+	@echo "... database.o"
+	@echo "... database.i"
+	@echo "... database.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

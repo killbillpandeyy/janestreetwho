@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/sandeep.bollepalli/Trader/main.cpp" "CMakeFiles/CrowBackend.dir/main.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/main.cpp.o.d"
+  "/Users/krishna/Desktop/janestreetwho/auth.cpp" "CMakeFiles/CrowBackend.dir/auth.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/auth.cpp.o.d"
+  "/Users/krishna/Desktop/janestreetwho/database.cpp" "CMakeFiles/CrowBackend.dir/database.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/database.cpp.o.d"
+  "/Users/krishna/Desktop/janestreetwho/main.cpp" "CMakeFiles/CrowBackend.dir/main.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

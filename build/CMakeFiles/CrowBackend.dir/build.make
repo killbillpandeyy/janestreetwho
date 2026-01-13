@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sandeep.bollepalli/Trader
+CMAKE_SOURCE_DIR = /Users/krishna/Desktop/janestreetwho
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sandeep.bollepalli/Trader/build
+CMAKE_BINARY_DIR = /Users/krishna/Desktop/janestreetwho/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CrowBackend.dir/depend.make
@@ -73,30 +73,62 @@ CMakeFiles/CrowBackend.dir/codegen:
 .PHONY : CMakeFiles/CrowBackend.dir/codegen
 
 CMakeFiles/CrowBackend.dir/main.cpp.o: CMakeFiles/CrowBackend.dir/flags.make
-CMakeFiles/CrowBackend.dir/main.cpp.o: /Users/sandeep.bollepalli/Trader/main.cpp
+CMakeFiles/CrowBackend.dir/main.cpp.o: /Users/krishna/Desktop/janestreetwho/main.cpp
 CMakeFiles/CrowBackend.dir/main.cpp.o: CMakeFiles/CrowBackend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sandeep.bollepalli/Trader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CrowBackend.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CrowBackend.dir/main.cpp.o -MF CMakeFiles/CrowBackend.dir/main.cpp.o.d -o CMakeFiles/CrowBackend.dir/main.cpp.o -c /Users/sandeep.bollepalli/Trader/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/krishna/Desktop/janestreetwho/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CrowBackend.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CrowBackend.dir/main.cpp.o -MF CMakeFiles/CrowBackend.dir/main.cpp.o.d -o CMakeFiles/CrowBackend.dir/main.cpp.o -c /Users/krishna/Desktop/janestreetwho/main.cpp
 
 CMakeFiles/CrowBackend.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CrowBackend.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sandeep.bollepalli/Trader/main.cpp > CMakeFiles/CrowBackend.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/krishna/Desktop/janestreetwho/main.cpp > CMakeFiles/CrowBackend.dir/main.cpp.i
 
 CMakeFiles/CrowBackend.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CrowBackend.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sandeep.bollepalli/Trader/main.cpp -o CMakeFiles/CrowBackend.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/krishna/Desktop/janestreetwho/main.cpp -o CMakeFiles/CrowBackend.dir/main.cpp.s
+
+CMakeFiles/CrowBackend.dir/auth.cpp.o: CMakeFiles/CrowBackend.dir/flags.make
+CMakeFiles/CrowBackend.dir/auth.cpp.o: /Users/krishna/Desktop/janestreetwho/auth.cpp
+CMakeFiles/CrowBackend.dir/auth.cpp.o: CMakeFiles/CrowBackend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/krishna/Desktop/janestreetwho/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CrowBackend.dir/auth.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CrowBackend.dir/auth.cpp.o -MF CMakeFiles/CrowBackend.dir/auth.cpp.o.d -o CMakeFiles/CrowBackend.dir/auth.cpp.o -c /Users/krishna/Desktop/janestreetwho/auth.cpp
+
+CMakeFiles/CrowBackend.dir/auth.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CrowBackend.dir/auth.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/krishna/Desktop/janestreetwho/auth.cpp > CMakeFiles/CrowBackend.dir/auth.cpp.i
+
+CMakeFiles/CrowBackend.dir/auth.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CrowBackend.dir/auth.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/krishna/Desktop/janestreetwho/auth.cpp -o CMakeFiles/CrowBackend.dir/auth.cpp.s
+
+CMakeFiles/CrowBackend.dir/database.cpp.o: CMakeFiles/CrowBackend.dir/flags.make
+CMakeFiles/CrowBackend.dir/database.cpp.o: /Users/krishna/Desktop/janestreetwho/database.cpp
+CMakeFiles/CrowBackend.dir/database.cpp.o: CMakeFiles/CrowBackend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/krishna/Desktop/janestreetwho/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CrowBackend.dir/database.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CrowBackend.dir/database.cpp.o -MF CMakeFiles/CrowBackend.dir/database.cpp.o.d -o CMakeFiles/CrowBackend.dir/database.cpp.o -c /Users/krishna/Desktop/janestreetwho/database.cpp
+
+CMakeFiles/CrowBackend.dir/database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CrowBackend.dir/database.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/krishna/Desktop/janestreetwho/database.cpp > CMakeFiles/CrowBackend.dir/database.cpp.i
+
+CMakeFiles/CrowBackend.dir/database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CrowBackend.dir/database.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/krishna/Desktop/janestreetwho/database.cpp -o CMakeFiles/CrowBackend.dir/database.cpp.s
 
 # Object files for target CrowBackend
 CrowBackend_OBJECTS = \
-"CMakeFiles/CrowBackend.dir/main.cpp.o"
+"CMakeFiles/CrowBackend.dir/main.cpp.o" \
+"CMakeFiles/CrowBackend.dir/auth.cpp.o" \
+"CMakeFiles/CrowBackend.dir/database.cpp.o"
 
 # External object files for target CrowBackend
 CrowBackend_EXTERNAL_OBJECTS =
 
 CrowBackend: CMakeFiles/CrowBackend.dir/main.cpp.o
+CrowBackend: CMakeFiles/CrowBackend.dir/auth.cpp.o
+CrowBackend: CMakeFiles/CrowBackend.dir/database.cpp.o
 CrowBackend: CMakeFiles/CrowBackend.dir/build.make
 CrowBackend: CMakeFiles/CrowBackend.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sandeep.bollepalli/Trader/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable CrowBackend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/krishna/Desktop/janestreetwho/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable CrowBackend"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CrowBackend.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +140,6 @@ CMakeFiles/CrowBackend.dir/clean:
 .PHONY : CMakeFiles/CrowBackend.dir/clean
 
 CMakeFiles/CrowBackend.dir/depend:
-	cd /Users/sandeep.bollepalli/Trader/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sandeep.bollepalli/Trader /Users/sandeep.bollepalli/Trader /Users/sandeep.bollepalli/Trader/build /Users/sandeep.bollepalli/Trader/build /Users/sandeep.bollepalli/Trader/build/CMakeFiles/CrowBackend.dir/DependInfo.cmake "--color=$(COLOR)" CrowBackend
+	cd /Users/krishna/Desktop/janestreetwho/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/krishna/Desktop/janestreetwho /Users/krishna/Desktop/janestreetwho /Users/krishna/Desktop/janestreetwho/build /Users/krishna/Desktop/janestreetwho/build /Users/krishna/Desktop/janestreetwho/build/CMakeFiles/CrowBackend.dir/DependInfo.cmake "--color=$(COLOR)" CrowBackend
 .PHONY : CMakeFiles/CrowBackend.dir/depend
 
