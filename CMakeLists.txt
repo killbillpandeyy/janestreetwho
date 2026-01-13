@@ -15,7 +15,7 @@ set(LOCAL_CROW "${CMAKE_CURRENT_SOURCE_DIR}/crow/include")
 # 3. Find System Dependencies (for linking)
 find_package(Threads REQUIRED)
 
-add_executable(CrowBackend main.cpp)
+add_executable(CrowBackend main.cpp auth.cpp database.cpp)
 
 # 4. Tell the compiler where to find headers
 target_include_directories(CrowBackend PUBLIC 
@@ -27,4 +27,5 @@ target_include_directories(CrowBackend PUBLIC
 target_link_libraries(CrowBackend 
     PRIVATE 
     Threads::Threads
+    sqlite3
 )
