@@ -1,7 +1,8 @@
-CMakeFiles/CrowBackend.dir/main.cpp.o: \
-  /Users/sandeep.bollepalli/Trader/main.cpp \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/query_string.h \
+CMakeFiles/CrowBackend.dir/server/resources/impl/userResource.cpp.o: \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/userResource.cpp \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../userResource.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/query_string.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -958,7 +959,7 @@ CMakeFiles/CrowBackend.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_parser_merged.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/http_parser_merged.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_static_assert.h \
@@ -1033,9 +1034,10 @@ CMakeFiles/CrowBackend.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/u8path.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/ci_map.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/TinySHA1.hpp \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/socket_adaptors.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/ci_map.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/TinySHA1.hpp \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/settings.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/socket_adaptors.h \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio.hpp \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio/any_completion_executor.hpp \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio/detail/config.hpp \
@@ -1595,43 +1597,63 @@ CMakeFiles/CrowBackend.dir/main.cpp.o: \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio/writable_pipe.hpp \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio/write_at.hpp \
   /Users/sandeep.bollepalli/Trader/boost_1_90_0/boost/asio/impl/write_at.hpp \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/socket_acceptors.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/socket_acceptors.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/logging.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/json.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/json.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/float.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/returnable.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/mustache.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/mustache.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/task_timer.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/json.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/logging.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/task_timer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_request.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/websocket.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/utility.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/common.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/http_request.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/ci_map.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/query_string.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/websocket.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/http_response.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_request.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/socket_adaptors.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/mime_types.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/parser.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/multipart.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/TinySHA1.hpp \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/parser.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_parser_merged.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/http_response.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/multipart.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/exceptions.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/multipart_view.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/multipart_view.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/routing.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/multipart.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/routing.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/websocket.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/mustache.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/middleware.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/middleware_context.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/middleware.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/middleware_context.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/compression.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/http_connection.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/compression.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_connection.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_server.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/middleware_context.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/parser.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/task_timer.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/http_server.h \
   /Users/sandeep.bollepalli/Trader/crow/include/crow/version.h \
-  /Users/sandeep.bollepalli/Trader/crow/include/crow/app.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_connection.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/socket_acceptors.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../crow/include/crow/app.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_callback.h \
-  /Users/sandeep.bollepalli/Trader/server/resources/userResource.h \
-  /Users/sandeep.bollepalli/Trader/server/resources/../../crow/include/crow.h \
-  /Users/sandeep.bollepalli/Trader/server/resources/../../core/repositories/database.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/routing.h \
+  /Users/sandeep.bollepalli/Trader/crow/include/crow/http_server.h \
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../core/repositories/database.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sqlite3.h \
-  /Users/sandeep.bollepalli/Trader/core/services/auth.h \
-  /Users/sandeep.bollepalli/Trader/core/repositories/database.h
+  /Users/sandeep.bollepalli/Trader/server/resources/impl/../../../core/services/auth.h
