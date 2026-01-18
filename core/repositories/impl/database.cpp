@@ -1,4 +1,4 @@
-#include "database.h"
+#include "../database.h"
 #include <iostream>
 #include <chrono>
 
@@ -9,7 +9,7 @@ void execute_sql(const std::string& sql) {
     if (sqlite3_exec(db, sql.c_str(), nullptr, nullptr, &err_msg) != SQLITE_OK) {
         std::cerr << "SQL error: " << err_msg << std::endl;
         sqlite3_free(err_msg);
-    }
+}
 }
 
 void init_db() {
@@ -23,22 +23,22 @@ void init_db() {
     execute_sql("INSERT OR IGNORE INTO users (username, password_hash) VALUES ('admin', 'password');");
 }
 
-bool check_credentials(const std::string& user, const std::string& pass) {
-    std::string sql = "SELECT password_hash FROM users WHERE username = '" + user + "';";
+bool check_credentials(const std::string& username, const std::string& password) {
+    std::string sql = "SELECT password_hash FROM users WHERE username = '" + username + "';";
     sqlite3_stmt* stmt;
     if (sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr) != SQLITE_OK) return false;
 
     bool valid = false;
     if (sqlite3_step(stmt) == SQLITE_ROW) {
         std::string stored_pass = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 0));
-        valid = (stored_pass == pass);
+        valid = (stored_pass == password);
     }
     sqlite3_finalize(stmt);
     return valid;
 }
 
-bool signup_user(const std::string& user, const std::string& pass) {
-    std::string sql = "INSERT INTO users (username, password_hash) VALUES ('" + user + "', '" + pass + "');";
+bool signup_user(const std::string& username, const std::string& password) {
+    std::string sql = "INSERT INTO users (username, password_hash) VALUES ('" + username + "', '" + password + "');";
     char* err_msg = nullptr;
     int rc = sqlite3_exec(db, sql.c_str(), nullptr, nullptr, &err_msg);
     if (rc != SQLITE_OK) {
@@ -49,8 +49,8 @@ bool signup_user(const std::string& user, const std::string& pass) {
     return true;
 }
 
-void store_token(const std::string& token, const std::string& user, long long expires_at) {
-    std::string sql = "INSERT INTO tokens (token, username, expires_at) VALUES ('" + token + "', '" + user + "', " + std::to_string(expires_at) + ");";
+void store_token(const std::string& token, const std::string& username, long long expires_at) {
+    std::string sql = "INSERT INTO tokens (token, username, expires_at) VALUES ('" + token + "', '" + username + "', " + std::to_string(expires_at) + ");";
     execute_sql(sql);
 }
 
