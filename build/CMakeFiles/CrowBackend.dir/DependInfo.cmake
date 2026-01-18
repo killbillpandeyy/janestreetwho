@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/krishna/Desktop/janestreetwho/auth.cpp" "CMakeFiles/CrowBackend.dir/auth.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/auth.cpp.o.d"
-  "/Users/krishna/Desktop/janestreetwho/database.cpp" "CMakeFiles/CrowBackend.dir/database.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/database.cpp.o.d"
-  "/Users/krishna/Desktop/janestreetwho/main.cpp" "CMakeFiles/CrowBackend.dir/main.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/main.cpp.o.d"
+  "/Users/sandeep.bollepalli/Trader/core/repositories/impl/database.cpp" "CMakeFiles/CrowBackend.dir/core/repositories/impl/database.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/core/repositories/impl/database.cpp.o.d"
+  "/Users/sandeep.bollepalli/Trader/core/services/impl/auth.cpp" "CMakeFiles/CrowBackend.dir/core/services/impl/auth.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/core/services/impl/auth.cpp.o.d"
+  "/Users/sandeep.bollepalli/Trader/main.cpp" "CMakeFiles/CrowBackend.dir/main.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/main.cpp.o.d"
+  "/Users/sandeep.bollepalli/Trader/server/resources/impl/userResource.cpp" "CMakeFiles/CrowBackend.dir/server/resources/impl/userResource.cpp.o" "gcc" "CMakeFiles/CrowBackend.dir/server/resources/impl/userResource.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

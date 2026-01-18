@@ -1,5 +1,5 @@
-#include "auth.h"
-#include "database.h"
+#include "../auth.h"
+#include "../../core/repositories/database.h"
 #include <random>
 #include <sstream>
 #include <iomanip>

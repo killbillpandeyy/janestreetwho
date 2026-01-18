@@ -15,7 +15,19 @@ set(LOCAL_CROW "${CMAKE_CURRENT_SOURCE_DIR}/crow/include")
 # 3. Find System Dependencies (for linking)
 find_package(Threads REQUIRED)
 
-add_executable(CrowBackend main.cpp auth.cpp database.cpp)
+
+file(GLOB_RECURSE SOURCES 
+    "server/**/*.cpp"
+    "core/**/*.cpp"
+    "main.cpp"
+)
+
+# Remove any boost files that might have been picked up
+
+list(FILTER SOURCES EXCLUDE REGEX "crow")
+list(FILTER SOURCES EXCLUDE REGEX "boost_1_90_0")
+
+add_executable(CrowBackend ${SOURCES})
 
 # 4. Tell the compiler where to find headers
 target_include_directories(CrowBackend PUBLIC 
