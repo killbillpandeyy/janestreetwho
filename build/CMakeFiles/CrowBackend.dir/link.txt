@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/CrowBackend.dir/core/repositories/impl/database.cpp.o CMakeFiles/CrowBackend.dir/core/services/impl/auth.cpp.o CMakeFiles/CrowBackend.dir/main.cpp.o CMakeFiles/CrowBackend.dir/server/resources/impl/userResource.cpp.o -o CrowBackend  -lsqlite3
