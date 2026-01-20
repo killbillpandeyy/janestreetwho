@@ -3,6 +3,7 @@
 #include "server/resources/userResource.h"
 #include "core/services/auth.h"
 #include "core/repositories/database.h"
+#include "server/resources/tradingResource.h"
 #include <string>
 
 int main()
@@ -14,6 +15,7 @@ int main()
     // Register all resources
 
     UserResource::register_routes(app);
+    TradingResource::register_routes(app);
 
     // root
     CROW_ROUTE(app, "/")([](){

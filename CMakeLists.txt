@@ -11,9 +11,11 @@ add_definitions(-DCROW_USE_BOOST)
 # We include the root of your local boost and the include folder of crow
 set(LOCAL_BOOST "${CMAKE_CURRENT_SOURCE_DIR}/boost_1_90_0")
 set(LOCAL_CROW "${CMAKE_CURRENT_SOURCE_DIR}/crow/include")
+set(LOCAL_OPENSSL "${CMAKE_CURRENT_SOURCE_DIR}/openssl")
 
 # 3. Find System Dependencies (for linking)
 find_package(Threads REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 
 file(GLOB_RECURSE SOURCES 
@@ -33,6 +35,7 @@ add_executable(CrowBackend ${SOURCES})
 target_include_directories(CrowBackend PUBLIC 
     ${LOCAL_BOOST} 
     ${LOCAL_CROW}
+    ${LOCAL_OPENSSL}
 )
 
 # 5. Tell the linker to join the actual library files
@@ -40,4 +43,6 @@ target_link_libraries(CrowBackend
     PRIVATE 
     Threads::Threads
     sqlite3
+    OpenSSL::SSL
+    OpenSSL::Crypto
 )
